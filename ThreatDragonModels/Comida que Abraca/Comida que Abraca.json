@@ -1,0 +1,27 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Comida que Abraca",
+    "owner": "Milena Lara",
+    "description": "Web Software developed by students at PUC Minas",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Modelagem de Ameaças - Comida que Abraça",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "Modelagem de Ameaças - Comida que Abraça"
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Erica Santos",
+    "threatTop": 0
+  }
+}
