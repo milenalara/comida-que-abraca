@@ -651,56 +651,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Autenticar\nUsuário",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Autenticar\nUsuário"
-            ],
-            "id": "fa62f32c-aff2-476e-b550-9132c8367f74",
-            "source": {
-              "cell": "0bf35d8f-5bfe-4192-923a-6d94f595fca9",
-              "port": "46451da1-08b2-4b60-bb8b-612b496b9d15"
-            },
-            "target": {
-              "cell": "5dcdab14-a301-4fa6-97b2-aef7dad26746",
-              "port": "8479b76b-b652-4bce-928f-dae0ebe466e2"
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 20
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Usuário\nValidado",
               "description": "",
               "outOfScope": false,
@@ -885,6 +835,84 @@
               {
                 "x": 260,
                 "y": 0
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Autenticar\nUsuário",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4d5ab9b3-27ce-4dac-953c-31fdb7400c04",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Autenticar\nUsuário"
+            ],
+            "id": "fa62f32c-aff2-476e-b550-9132c8367f74",
+            "source": {
+              "cell": "0bf35d8f-5bfe-4192-923a-6d94f595fca9",
+              "port": "46451da1-08b2-4b60-bb8b-612b496b9d15"
+            },
+            "target": {
+              "cell": "5dcdab14-a301-4fa6-97b2-aef7dad26746",
+              "port": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+            },
+            "vertices": [
+              {
+                "x": 540,
+                "y": 80
+              },
+              {
+                "x": 560,
+                "y": 20
+              },
+              {
+                "x": 590,
+                "y": -10
               }
             ]
           },
@@ -1979,6 +2007,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 23,
             "ports": {
               "groups": {
                 "top": {
@@ -2062,7 +2091,6 @@
               ]
             },
             "id": "dc2cce72-1d7f-4708-b180-4cecf90376a4",
-            "zIndex": 23,
             "data": {
               "type": "tm.Process",
               "name": "Processo\nGerenciamento\nde Doações",
@@ -2082,6 +2110,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Erica Alves",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
