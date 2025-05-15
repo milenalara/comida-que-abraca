@@ -20,11 +20,11 @@
           {
             "position": {
               "x": 390,
-              "y": 61
+              "y": 90.00000000000006
             },
             "size": {
-              "width": 90,
-              "height": 80
+              "width": 140,
+              "height": 120
             },
             "attrs": {
               "text": {
@@ -137,42 +137,6 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Limite de confiança\nUsuário / Servidor Web",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Limite de confiança\nUsuário / Servidor Web"
-            ],
-            "id": "5a04b077-1a7e-4ece-a5f1-36d06ed76ed6",
-            "source": {
-              "x": 250,
-              "y": -20
-            },
-            "target": {
-              "x": 20,
-              "y": 420
-            },
-            "vertices": [
-              {
-                "x": 290,
-                "y": 150
-              },
-              {
-                "x": 230,
-                "y": 340
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -235,17 +199,21 @@
             ],
             "id": "8188e159-d314-44eb-8bfb-c008bab28598",
             "source": {
-              "x": 590,
-              "y": 30
+              "x": 830,
+              "y": -180
             },
             "target": {
-              "x": 620,
-              "y": 450
+              "x": 900,
+              "y": 560
             },
             "vertices": [
               {
-                "x": 550,
-                "y": 200
+                "x": 800,
+                "y": 170
+              },
+              {
+                "x": 830,
+                "y": 400
               }
             ]
           },
@@ -269,7 +237,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Queries SQL",
+              "name": "Autenticar\nUsuário",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -281,21 +249,219 @@
               "threats": []
             },
             "labels": [
-              "Queries SQL"
+              "Autenticar\nUsuário"
             ],
-            "id": "38fe669f-0741-4a36-8e09-7d01c5a785fa",
+            "id": "fa62f32c-aff2-476e-b550-9132c8367f74",
             "source": {
-              "cell": "0bf35d8f-5bfe-4192-923a-6d94f595fca9",
-              "port": "46451da1-08b2-4b60-bb8b-612b496b9d15"
+              "x": 460,
+              "y": 90
             },
             "target": {
-              "cell": "4f256aa8-2fe8-4539-b7e7-572d18b3e787",
-              "port": "cc786033-e468-4876-8574-cd41645c5f01"
+              "cell": "5dcdab14-a301-4fa6-97b2-aef7dad26746",
+              "port": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Limite de confiança\nUsuário / Servidor Web",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Limite de confiança\nUsuário / Servidor Web"
+            ],
+            "id": "5a04b077-1a7e-4ece-a5f1-36d06ed76ed6",
+            "source": {
+              "x": 150,
+              "y": -200
+            },
+            "target": {
+              "x": 20,
+              "y": 420
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": -90
+              },
+              {
+                "x": 250,
+                "y": 150
+              },
+              {
+                "x": 200,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Requisição\nde Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Requisição\nde Login"
+            ],
+            "id": "27b19e95-14ab-4eef-9922-7ef9e4fa4c0d",
+            "source": {
+              "cell": "d49150da-2485-4f8d-af02-8e1644c4d149",
+              "port": "3cac08b0-e912-4909-a8e5-c5dc6d29a6d8"
+            },
+            "target": {
+              "cell": "0bf35d8f-5bfe-4192-923a-6d94f595fca9",
+              "port": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 70
+              },
+              {
+                "x": 350,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resposta\ndo Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Resposta\ndo Login"
+            ],
+            "id": "a91787dd-1e51-40ba-a039-ab7ff95a58c9",
+            "source": {
+              "cell": "0bf35d8f-5bfe-4192-923a-6d94f595fca9",
+              "port": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+            },
+            "target": {
+              "cell": "d49150da-2485-4f8d-af02-8e1644c4d149",
+              "port": "3cac08b0-e912-4909-a8e5-c5dc6d29a6d8"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 130
+              },
+              {
+                "x": 230,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resultado\nAutenticação\ndo Usuário",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Resultado\nAutenticação\ndo Usuário"
+            ],
+            "id": "120c3716-6f41-4c82-883c-e7554f447a75",
+            "source": {
+              "cell": "5dcdab14-a301-4fa6-97b2-aef7dad26746",
+              "port": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+            },
+            "target": {
+              "cell": "0bf35d8f-5bfe-4192-923a-6d94f595fca9",
+              "port": "28bc68b8-6511-4bb4-9868-f0d9c461a76c"
             },
             "vertices": [
               {
                 "x": 590,
-                "y": 80
+                "y": 90
               }
             ]
           },
@@ -319,7 +485,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Dados",
+              "name": "Query de\nAutenticação\nde Usuário",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -331,32 +497,128 @@
               "threats": []
             },
             "labels": [
-              "Dados"
+              "Query de\nAutenticação\nde Usuário"
             ],
-            "id": "343dd750-df7b-473c-8314-6966ca19458b",
+            "id": "9782571b-65c3-4783-a09b-925b472a39e2",
+            "source": {
+              "cell": "5dcdab14-a301-4fa6-97b2-aef7dad26746",
+              "port": "46451da1-08b2-4b60-bb8b-612b496b9d15"
+            },
+            "target": {
+              "cell": "4f256aa8-2fe8-4539-b7e7-572d18b3e787",
+              "port": "cc786033-e468-4876-8574-cd41645c5f01"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dados de\nUsuário\nAutenticado",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Dados de\nUsuário\nAutenticado"
+            ],
+            "id": "5d702449-6901-4a40-afac-ab9d28ff926c",
             "source": {
               "cell": "4f256aa8-2fe8-4539-b7e7-572d18b3e787",
               "port": "cc786033-e468-4876-8574-cd41645c5f01"
             },
             "target": {
-              "cell": "0bf35d8f-5bfe-4192-923a-6d94f595fca9",
+              "cell": "5dcdab14-a301-4fa6-97b2-aef7dad26746",
               "port": "46451da1-08b2-4b60-bb8b-612b496b9d15"
             },
             "vertices": [
               {
-                "x": 610,
-                "y": 145
-              },
+                "x": 880,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Requisição\nde Cadastro",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Requisição\nde Cadastro"
+            ],
+            "id": "a4b496dd-cad7-4a40-908e-912a476a786e",
+            "source": {
+              "x": 190,
+              "y": -40
+            },
+            "target": {
+              "x": 410,
+              "y": 100
+            },
+            "vertices": [
               {
-                "x": 530,
-                "y": 140
+                "x": 290,
+                "y": 30
               }
             ]
           },
           {
             "position": {
-              "x": 79,
-              "y": 61
+              "x": 80,
+              "y": -70
             },
             "size": {
               "width": 112.5,
@@ -471,8 +733,8 @@
           },
           {
             "position": {
-              "x": 375,
-              "y": 292
+              "x": 330,
+              "y": 490
             },
             "size": {
               "width": 120,
@@ -594,8 +856,8 @@
           },
           {
             "position": {
-              "x": 700,
-              "y": 120
+              "x": 1000,
+              "y": 110
             },
             "size": {
               "width": 130,
@@ -717,8 +979,8 @@
           },
           {
             "position": {
-              "x": 690,
-              "y": -69.99999999999994
+              "x": 640,
+              "y": -30
             },
             "size": {
               "width": 110,
@@ -726,7 +988,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Login"
+                "text": "Processo\nde Login"
               },
               "body": {
                 "stroke": "#333333",
@@ -736,6 +998,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -819,10 +1082,9 @@
               ]
             },
             "id": "5dcdab14-a301-4fa6-97b2-aef7dad26746",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
-              "name": "Login",
+              "name": "Processo\nde Login",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -836,8 +1098,8 @@
           },
           {
             "position": {
-              "x": 850,
-              "y": -39.99999999999996
+              "x": 510,
+              "y": -100
             },
             "size": {
               "width": 100,
@@ -845,7 +1107,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Cadastro"
+                "text": "Processo\nde Cadastro"
               },
               "body": {
                 "stroke": "#333333",
@@ -941,7 +1203,7 @@
             "zIndex": 15,
             "data": {
               "type": "tm.Process",
-              "name": "Cadastro",
+              "name": "Processo\nde Cadastro",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -955,16 +1217,16 @@
           },
           {
             "position": {
-              "x": 950,
-              "y": 90.0000000000002
+              "x": 380,
+              "y": -180
             },
             "size": {
-              "width": 150,
-              "height": 110
+              "width": 130,
+              "height": 100
             },
             "attrs": {
               "text": {
-                "text": "Enviar\nformulário\nde doação"
+                "text": "Processo\nde Envio\nde Formulário\nde doação"
               },
               "body": {
                 "stroke": "#333333",
@@ -1060,7 +1322,7 @@
             "zIndex": 16,
             "data": {
               "type": "tm.Process",
-              "name": "Enviar\nformulário\nde doação",
+              "name": "Processo\nde Envio\nde Formulário\nde doação",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1074,16 +1336,16 @@
           },
           {
             "position": {
-              "x": 970,
-              "y": 210
+              "x": 590,
+              "y": 110
             },
             "size": {
-              "width": 140,
-              "height": 100
+              "width": 160,
+              "height": 110
             },
             "attrs": {
               "text": {
-                "text": "Acompanhar\ndoações\nregistradas"
+                "text": "Processo de\nAcompanhar\ndoações\nregistradas"
               },
               "body": {
                 "stroke": "#333333",
@@ -1179,7 +1441,7 @@
             "zIndex": 17,
             "data": {
               "type": "tm.Process",
-              "name": "Acompanhar\ndoações\nregistradas",
+              "name": "Processo de\nAcompanhar\ndoações\nregistradas",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1194,7 +1456,7 @@
           {
             "position": {
               "x": 58,
-              "y": 150
+              "y": 60
             },
             "size": {
               "width": 112.5,
@@ -1310,7 +1572,7 @@
           {
             "position": {
               "x": 58,
-              "y": -55
+              "y": 250
             },
             "size": {
               "width": 112.5,
@@ -1420,6 +1682,363 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 230
+            },
+            "size": {
+              "width": 150,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Processo de\nGerenciamento\nEntrada de\nDoações"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "28bc68b8-6511-4bb4-9868-f0d9c461a76c"
+                },
+                {
+                  "group": "right",
+                  "id": "46451da1-08b2-4b60-bb8b-612b496b9d15"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fb05b9ee-f49c-4a4d-bd41-3b1bc66abbe0"
+                },
+                {
+                  "group": "left",
+                  "id": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+                }
+              ]
+            },
+            "id": "b4a62230-d609-4d9d-8192-3edb1f8aa6da",
+            "zIndex": 20,
+            "data": {
+              "type": "tm.Process",
+              "name": "Processo de\nGerenciamento\nEntrada de\nDoações",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 580,
+              "y": 330
+            },
+            "size": {
+              "width": 150,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Processo de\nGerenciamento\nde saída\nde doações"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "28bc68b8-6511-4bb4-9868-f0d9c461a76c"
+                },
+                {
+                  "group": "right",
+                  "id": "46451da1-08b2-4b60-bb8b-612b496b9d15"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fb05b9ee-f49c-4a4d-bd41-3b1bc66abbe0"
+                },
+                {
+                  "group": "left",
+                  "id": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+                }
+              ]
+            },
+            "id": "030aaf7a-5b53-47af-9174-af52f6eecb4a",
+            "zIndex": 21,
+            "data": {
+              "type": "tm.Process",
+              "name": "Processo de\nGerenciamento\nde saída\nde doações",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 520,
+              "y": 442
+            },
+            "size": {
+              "width": 140,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Processo\nde Geração\nde relatórios"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "28bc68b8-6511-4bb4-9868-f0d9c461a76c"
+                },
+                {
+                  "group": "right",
+                  "id": "46451da1-08b2-4b60-bb8b-612b496b9d15"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fb05b9ee-f49c-4a4d-bd41-3b1bc66abbe0"
+                },
+                {
+                  "group": "left",
+                  "id": "8479b76b-b652-4bce-928f-dae0ebe466e2"
+                }
+              ]
+            },
+            "id": "6388fe47-3079-488f-9c88-dbc46d6a1878",
+            "zIndex": 22,
+            "data": {
+              "type": "tm.Process",
+              "name": "Processo\nde Geração\nde relatórios",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
