@@ -1317,6 +1317,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "ONG"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -1411,20 +1414,13 @@
             "zIndex": 19,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "ONG",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
